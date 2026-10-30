@@ -1,0 +1,42 @@
+[PowerProfiles]
+# Used when no performance application is open.
+ac_profile = balanced
+battery_profile = power-saver
+
+# Mirrors the uploaded extension's low-battery and weak-adapter priorities.
+low_battery_protection = true
+weak_adapter_protection = true
+
+# Manual profile changes update the default for the current power state,
+# except while low battery, weak-adapter, or performance-app mode is active.
+remember_user_profile = true
+
+[PerformanceApplications]
+enabled = true
+# KWin desktopFileName IDs, separated by semicolons. Examples:
+# code;com.jetbrains.IntelliJ-IDEA-Ultimate;steam
+apps = dev.zed.Zed
+ac_profile = performance
+battery_profile = balanced
+
+[Brightness]
+enabled = true
+ac_percent = 100
+battery_percent = 60
+low_battery_percent = 30
+restore_pre_service_brightness = true
+
+# The daemon probes these PowerDevil D-Bus service names in order.
+powerdevil_services = local.org_kde_powerdevil;org.kde.Solid.PowerManagement
+
+[Display]
+refresh_rate_enabled = true
+# KScreen output ID from: kscreen-doctor -o
+output = 1
+ac_mode = 1920x1080@144
+battery_mode = 1920x1080@60
+kscreen_doctor = /usr/bin/kscreen-doctor
+
+[Logging]
+# DEBUG logs every KWin window event and whether its desktop ID matched.
+level = DEBUG

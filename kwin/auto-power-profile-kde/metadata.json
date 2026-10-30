@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Name": "Auto Power Profile KDE",
+        "Description": "Tracks configured application windows and reports them to the Auto Power Profile KDE daemon.",
+        "Icon": "preferences-system-power-management",
+        "Id": "auto-power-profile-kde",
+        "Version": "1.1.0",
+        "EnabledByDefault": false
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}
